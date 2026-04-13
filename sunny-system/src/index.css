@@ -10,37 +10,13 @@
   --border-brand-default: #5B4FCF;
   --border-neutral-secondary: #5B4FCF;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--color-secondary-text);
-  background: var(--color-background);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+ 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #f3f4f6;
-    --color-neutral: #2e303a;
-    --color-subtle: rgba(22, 23, 29, 0);
-    --color-background: #16171d;
-    --color-primary-text: #f3f4f6;
-    --color-secondary-text: #9ca3af;
-    --color-accent: #c084fc;
-    --text-brand-on-brand: #c084fc;
-    --border-brand-default: #c084fc;
-    --border-neutral-secondary: #c084fc;
+  
   }
 
   #social .button-icon {

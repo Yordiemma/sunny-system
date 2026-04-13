@@ -43,9 +43,6 @@
     --border-neutral-secondary: #c084fc;
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
 #root {
@@ -93,8 +90,7 @@ p {
   margin: 0;
 }
 
-code,
-.counter {
+code {
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;

@@ -1,0 +1,51 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+
+<Meta title="Design System/Overview" />
+
+# Checklist Design System
+
+This project uses a small design system so the checklist app can grow without
+copying styles into every feature. The system is intentionally modest: tokens,
+reusable components, documented states, and a feature-level checklist built from
+those pieces.
+
+## Token Strategy
+
+Primitive tokens store raw values such as color, spacing, and radius:
+
+- `--primitive-color-neutral-100`
+- `--primitive-color-indigo-500`
+- `--primitive-space-4`
+- `--primitive-radius-lg`
+
+Semantic tokens describe purpose and are used by components:
+
+- `--color-background`
+- `--color-primary-text`
+- `--color-accent`
+- `--border-brand-default`
+- `--space-4`
+- `--radius-lg`
+
+This split keeps the code aligned with Figma variables. If a Figma primitive
+changes, the primitive token can change once. Components keep using the semantic
+name, so the intent stays readable.
+
+## Component Levels
+
+System-level components are reusable outside this checklist feature:
+
+- `Button`
+- `Input`
+- `Checkbox`
+- `Card`
+- `ListItem`
+
+The `Checklist` component is feature-level because it owns task state, editing,
+empty state, and checklist-specific copy.
+
+## Storybook Role
+
+Storybook documents component variants, interaction states, and accessibility
+checks. It also includes a checklist interaction story so the add-task flow can
+be tested separately from the full Vite app.
